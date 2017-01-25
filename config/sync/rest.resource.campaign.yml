@@ -1,0 +1,17 @@
+uuid: 803e18ed-b00f-4abc-a727-63bcf3267c4d
+langcode: en
+status: true
+dependencies:
+  module:
+    - campaign_api
+    - serialization
+    - user
+id: campaign
+plugin_id: campaign
+granularity: method
+configuration:
+  GET:
+    supported_formats:
+      - json
+    supported_auth:
+      - cookie

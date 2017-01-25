@@ -1,0 +1,9 @@
+uuid: fae39138-a054-4797-8d5a-8d00749bd58c
+langcode: en
+status: true
+dependencies: {  }
+name: 'Article type'
+vid: article_type
+description: ''
+hierarchy: 0
+weight: 0

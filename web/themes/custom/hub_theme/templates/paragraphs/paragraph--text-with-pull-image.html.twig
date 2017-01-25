@@ -1,0 +1,14 @@
+{#
+/**
+ * @file
+ * paragraph--body-with-pull-quote.html.twig
+ */
+#}
+<div class="field-body">
+  {{ content.field_body }}
+</div>
+{% if content.field_image %}
+<div class="field-pull-image col-sm-4 pull-{{ pull_position }}">
+  <div class="">{{ content.field_image }}</div>
+</div>
+{% endif %}

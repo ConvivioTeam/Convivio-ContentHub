@@ -1,0 +1,23 @@
+uuid: 0944a59d-0e27-48a3-93d1-42524adf2464
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pull_quote_position
+    - paragraphs.paragraphs_type.text_with_pull_image
+  module:
+    - options
+id: paragraph.text_with_pull_image.field_pull_quote_position
+field_name: field_pull_quote_position
+entity_type: paragraph
+bundle: text_with_pull_image
+label: 'Image position'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

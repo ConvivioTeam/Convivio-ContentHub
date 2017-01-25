@@ -1,0 +1,19 @@
+uuid: ab7fbb28-7d37-4069-b168-6ae783f5a359
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pull_quotee_role
+    - paragraphs.paragraphs_type.pull_quote
+id: paragraph.pull_quote.field_pull_quotee_role
+field_name: field_pull_quotee_role
+entity_type: paragraph
+bundle: pull_quote
+label: 'Pull Quotee Role'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,23 @@
+uuid: aa78acd5-752d-4b34-b6d3-bcd1f3c2ea5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_external
+    - node.type.campaign
+id: node.campaign.field_external
+field_name: field_external
+entity_type: node
+bundle: campaign
+label: External
+description: 'Is this an external campaign site, served on its own domain or subdomain?'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

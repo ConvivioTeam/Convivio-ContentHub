@@ -1,0 +1,21 @@
+uuid: 645fe2b4-a3ea-4115-8f89-cb653a401258
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_pull_quotee
+field_name: field_pull_quotee
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

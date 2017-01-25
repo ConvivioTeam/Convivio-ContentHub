@@ -1,0 +1,17 @@
+uuid: 9fb75bd3-cab3-48df-a3cd-e6da68172123
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Campaign
+type: campaign
+description: 'A campaign. Suitable for a microsite, either external or internal.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,17 @@
+uuid: 59e8e5f8-e8ac-4f57-bcc5-d6542d31059a
+langcode: en
+status: true
+dependencies:
+  module:
+    - campaign_api
+    - serialization
+    - user
+id: campaigns
+plugin_id: campaigns
+granularity: method
+configuration:
+  GET:
+    supported_formats:
+      - json
+    supported_auth:
+      - cookie

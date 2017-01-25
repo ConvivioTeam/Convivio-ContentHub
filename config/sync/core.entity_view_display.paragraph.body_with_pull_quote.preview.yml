@@ -1,0 +1,21 @@
+uuid: a816d533-5cff-47b1-b47f-1dbd4bcf78e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.body_with_pull_quote.field_body
+    - field.field.paragraph.body_with_pull_quote.field_pull_quote_position
+    - field.field.paragraph.body_with_pull_quote.field_pull_quote_ref
+    - paragraphs.paragraphs_type.body_with_pull_quote
+id: paragraph.body_with_pull_quote.preview
+targetEntityType: paragraph
+bundle: body_with_pull_quote
+mode: preview
+content: {  }
+hidden:
+  created: true
+  field_body: true
+  field_pull_quote_position: true
+  field_pull_quote_ref: true
+  uid: true

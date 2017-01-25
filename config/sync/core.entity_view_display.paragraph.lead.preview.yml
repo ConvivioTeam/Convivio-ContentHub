@@ -1,0 +1,24 @@
+uuid: 5a5e6b38-f60c-4386-a739-511c8770f568
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.lead.field_body
+    - paragraphs.paragraphs_type.lead
+  module:
+    - text
+id: paragraph.lead.preview
+targetEntityType: paragraph
+bundle: lead
+mode: preview
+content:
+  field_body:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+hidden:
+  created: true
+  uid: true

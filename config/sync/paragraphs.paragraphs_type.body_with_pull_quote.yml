@@ -1,0 +1,6 @@
+uuid: 73ad628f-ee07-4806-9be8-a586df7b0b46
+langcode: en
+status: true
+dependencies: {  }
+id: body_with_pull_quote
+label: 'Text with pull quote'

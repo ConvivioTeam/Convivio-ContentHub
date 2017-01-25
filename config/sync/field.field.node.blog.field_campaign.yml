@@ -1,0 +1,29 @@
+uuid: 7115e85f-b041-4e10-8f0a-97da14e5ce83
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_campaign
+    - node.type.blog
+    - node.type.campaign
+id: node.blog.field_campaign
+field_name: field_campaign
+entity_type: node
+bundle: blog
+label: Campaign
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      campaign: campaign
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

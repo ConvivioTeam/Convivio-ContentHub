@@ -1,0 +1,19 @@
+uuid: 27e0d05b-0a42-438e-842a-4c25c4fcd468
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pull_quotee
+    - paragraphs.paragraphs_type.pull_quote
+id: paragraph.pull_quote.field_pull_quotee
+field_name: field_pull_quotee
+entity_type: paragraph
+bundle: pull_quote
+label: 'Pull Quotee'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

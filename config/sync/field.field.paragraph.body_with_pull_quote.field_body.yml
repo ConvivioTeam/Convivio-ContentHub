@@ -1,0 +1,21 @@
+uuid: 604905da-2bce-4233-8e70-dd7476b26705
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.body_with_pull_quote
+  module:
+    - text
+id: paragraph.body_with_pull_quote.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: body_with_pull_quote
+label: Body
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

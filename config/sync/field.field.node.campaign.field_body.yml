@@ -1,0 +1,38 @@
+uuid: 9d1bf03b-dc40-4a24-ae4f-951f29460eaa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body
+    - node.type.campaign
+    - paragraphs.paragraphs_type.body
+    - paragraphs.paragraphs_type.body_with_pull_quote
+  module:
+    - entity_reference_revisions
+id: node.campaign.field_body
+field_name: field_body
+entity_type: node
+bundle: campaign
+label: Body
+description: 'Add paragraphs to create your page body.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      body_with_pull_quote: body_with_pull_quote
+      body: body
+    target_bundles_drag_drop:
+      body_with_pull_quote:
+        enabled: true
+        weight: 4
+      body:
+        enabled: true
+        weight: 5
+      pull_quote:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,39 @@
+uuid: b21cc597-36e9-4fc9-9eab-8ad8b8a33284
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pull_quote.field_pull_quote
+    - field.field.paragraph.pull_quote.field_pull_quotee
+    - field.field.paragraph.pull_quote.field_pull_quotee_role
+    - paragraphs.paragraphs_type.pull_quote
+  module:
+    - text
+id: paragraph.pull_quote.default
+targetEntityType: paragraph
+bundle: pull_quote
+mode: default
+content:
+  field_pull_quote:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_pull_quotee:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_pull_quotee_role:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden:
+  created: true
+  uid: true

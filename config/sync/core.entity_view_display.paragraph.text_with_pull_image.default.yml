@@ -1,0 +1,41 @@
+uuid: 5078f979-a218-4ca8-b44a-3e9e64c412bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_with_pull_image.field_body
+    - field.field.paragraph.text_with_pull_image.field_image
+    - field.field.paragraph.text_with_pull_image.field_pull_quote_position
+    - paragraphs.paragraphs_type.text_with_pull_image
+  module:
+    - entity_reference_revisions
+    - options
+    - text
+id: paragraph.text_with_pull_image.default
+targetEntityType: paragraph
+bundle: text_with_pull_image
+mode: default
+content:
+  field_body:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_image:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_pull_quote_position:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+hidden:
+  created: true
+  uid: true

@@ -1,0 +1,14 @@
+uuid: 5c9d7d93-3f05-4ece-bac9-ea6fe6820733
+name: 'Hub Test'
+mail: joe.baker+hubtest@weareconvivio.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo

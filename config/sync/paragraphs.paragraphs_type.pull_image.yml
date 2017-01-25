@@ -1,0 +1,6 @@
+uuid: a05c3d93-0d25-4255-be8d-3957d3d69974
+langcode: en
+status: true
+dependencies: {  }
+id: pull_image
+label: 'Pull Image'

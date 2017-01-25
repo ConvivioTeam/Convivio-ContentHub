@@ -1,0 +1,26 @@
+uuid: 58438ed4-e105-4df0-a173-ab020276851d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pull_image.field_pull_image
+    - image.style.max_325x325
+    - paragraphs.paragraphs_type.pull_image
+  module:
+    - image
+id: paragraph.pull_image.default
+targetEntityType: paragraph
+bundle: pull_image
+mode: default
+content:
+  field_pull_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: max_325x325
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+hidden:
+  created: true
+  uid: true

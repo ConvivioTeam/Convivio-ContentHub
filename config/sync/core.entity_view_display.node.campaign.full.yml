@@ -1,0 +1,70 @@
+uuid: 21cfab4e-2f14-47f0-bc24-6156a1ce11ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.campaign.body
+    - field.field.node.campaign.field_body
+    - field.field.node.campaign.field_external
+    - field.field.node.campaign.field_external_site_url
+    - field.field.node.campaign.field_image
+    - node.type.campaign
+  module:
+    - entity_reference_revisions
+    - image
+    - link
+    - text
+    - user
+id: node.campaign.full
+targetEntityType: node
+bundle: campaign
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  field_body:
+    type: entity_reference_revisions_entity_view
+    weight: 5
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_external:
+    weight: 3
+    label: inline
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+  field_external_site_url:
+    weight: 4
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

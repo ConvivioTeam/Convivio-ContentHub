@@ -1,0 +1,23 @@
+uuid: c3362ed4-4301-483f-8e84-1967e59f586b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pull_quote_position
+    - paragraphs.paragraphs_type.body_with_pull_quote
+  module:
+    - options
+id: paragraph.body_with_pull_quote.field_pull_quote_position
+field_name: field_pull_quote_position
+entity_type: paragraph
+bundle: body_with_pull_quote
+label: 'Quote position'
+description: 'Choose to place the quote left or right.'
+required: true
+translatable: false
+default_value:
+  -
+    value: right
+default_value_callback: ''
+settings: {  }
+field_type: list_string

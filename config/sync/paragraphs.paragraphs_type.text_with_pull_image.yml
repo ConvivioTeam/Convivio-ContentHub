@@ -1,0 +1,6 @@
+uuid: 86c34746-2f4b-48f4-a877-e298ed7fa0bd
+langcode: en
+status: true
+dependencies: {  }
+id: text_with_pull_image
+label: 'Text with pull image'

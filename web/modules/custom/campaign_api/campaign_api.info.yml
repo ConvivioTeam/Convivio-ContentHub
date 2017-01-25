@@ -1,0 +1,5 @@
+name: Campaign API
+type: module
+description: 'Campaign RESTful API endpoints.'
+package: Web Services (Custom)
+core: 8.x

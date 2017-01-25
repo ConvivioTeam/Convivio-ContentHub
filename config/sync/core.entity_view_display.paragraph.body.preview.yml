@@ -1,0 +1,17 @@
+uuid: 10ed678d-0333-40e2-b49c-a3723f600a81
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.body.field_body
+    - paragraphs.paragraphs_type.body
+id: paragraph.body.preview
+targetEntityType: paragraph
+bundle: body
+mode: preview
+content: {  }
+hidden:
+  created: true
+  field_body: true
+  uid: true

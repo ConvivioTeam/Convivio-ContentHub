@@ -1,0 +1,54 @@
+uuid: 6c7fd80a-533e-4ead-bacf-b06d650e01e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.article.comment
+    - field.field.node.article.field_body
+    - field.field.node.article.field_campaign
+    - field.field.node.article.field_image
+    - field.field.node.article.field_tags
+    - image.style.medium
+    - node.type.article
+  module:
+    - entity_reference_revisions
+    - image
+    - user
+_core:
+  default_config_hash: U8ghxJXn8JE2p6Q2wLpPWAxpz4r_8crL1LxtapSrHAE
+id: node.article.teaser
+targetEntityType: node
+bundle: article
+mode: teaser
+content:
+  field_body:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: preview
+      link: ''
+    third_party_settings: {  }
+  field_image:
+    type: image
+    weight: 0
+    settings:
+      image_style: medium
+      image_link: content
+    third_party_settings: {  }
+    label: hidden
+  field_tags:
+    type: entity_reference_label
+    weight: 2
+    settings:
+      link: true
+    third_party_settings: {  }
+    label: inline
+  links:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  comment: true
+  field_campaign: true

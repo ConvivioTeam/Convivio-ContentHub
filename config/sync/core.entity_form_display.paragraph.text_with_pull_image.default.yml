@@ -1,0 +1,43 @@
+uuid: 588985e1-601d-4ff9-ad34-91d03dbed507
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_with_pull_image.field_body
+    - field.field.paragraph.text_with_pull_image.field_image
+    - field.field.paragraph.text_with_pull_image.field_pull_quote_position
+    - paragraphs.paragraphs_type.text_with_pull_image
+  module:
+    - paragraphs
+    - text
+id: paragraph.text_with_pull_image.default
+targetEntityType: paragraph
+bundle: text_with_pull_image
+mode: default
+content:
+  field_body:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_image:
+    type: entity_reference_paragraphs
+    weight: 2
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: button
+      form_display_mode: default
+    third_party_settings: {  }
+  field_pull_quote_position:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+hidden:
+  created: true
+  status: true
+  uid: true

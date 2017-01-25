@@ -1,0 +1,23 @@
+uuid: 3d564ec9-9746-428d-b131-623069d7dc5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.lead.field_body
+    - paragraphs.paragraphs_type.lead
+  module:
+    - text
+id: paragraph.lead.default
+targetEntityType: paragraph
+bundle: lead
+mode: default
+content:
+  field_body:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+hidden:
+  created: true
+  uid: true

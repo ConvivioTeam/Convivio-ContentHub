@@ -1,0 +1,18 @@
+uuid: 00b9bd7f-5e91-403b-adf9-2336285e8a7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.campaign
+id: node.campaign.title
+field_name: title
+entity_type: node
+bundle: campaign
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

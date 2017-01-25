@@ -1,0 +1,43 @@
+uuid: deccf66b-6131-40dd-97fe-faed6cfa9aa9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.body_with_pull_quote.field_body
+    - field.field.paragraph.body_with_pull_quote.field_pull_quote_position
+    - field.field.paragraph.body_with_pull_quote.field_pull_quote_ref
+    - paragraphs.paragraphs_type.body_with_pull_quote
+  module:
+    - paragraphs
+    - text
+id: paragraph.body_with_pull_quote.default
+targetEntityType: paragraph
+bundle: body_with_pull_quote
+mode: default
+content:
+  field_body:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_pull_quote_position:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+  field_pull_quote_ref:
+    type: entity_reference_paragraphs
+    weight: 2
+    settings:
+      title: 'Pull quote'
+      title_plural: 'Pull quotes'
+      edit_mode: open
+      add_mode: button
+      form_display_mode: default
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

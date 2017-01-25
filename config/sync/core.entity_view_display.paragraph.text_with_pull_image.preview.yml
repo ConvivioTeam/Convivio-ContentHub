@@ -1,0 +1,19 @@
+uuid: dba00487-6ba3-41bd-9328-189251d91afa
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.text_with_pull_image.field_body
+    - field.field.paragraph.text_with_pull_image.field_image
+    - paragraphs.paragraphs_type.text_with_pull_image
+id: paragraph.text_with_pull_image.preview
+targetEntityType: paragraph
+bundle: text_with_pull_image
+mode: preview
+content: {  }
+hidden:
+  created: true
+  field_body: true
+  field_image: true
+  uid: true
